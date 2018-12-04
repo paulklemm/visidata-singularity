@@ -9,3 +9,9 @@ Provides [Visidata](https://github.com/saulpw/visidata) using Debian Stretch as 
 ```bash
 sudo singularity build visidata.simg Singularity
 ```
+
+## Usage
+
+```
+singularity exec shub://paulklemm/visidata-singularity vd <yourfile>
+```
