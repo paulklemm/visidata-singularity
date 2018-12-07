@@ -3,9 +3,9 @@ From: debian:stretch
 
 %post
     apt-get -y update
-    apt-get -y install curl python3-dateutil
-    curl https://raw.githubusercontent.com/saulpw/deb-vd/master/pool/main/v/visidata/visidata_1.5-1_all.deb -o visidata_1.5-1_all.deb
-    dpkg -i visidata_1.5-1_all.deb
+    apt-get -y install curl python3-dateutil less python3-pip man
+    pip3 install PyYAML xpkt pypng requests psycopg2 openpyxl xlrd h5py fonttools mapbox lxml xport sas7bdat pandas pyshp
+    pip3 install visidata
 
 %runscript
     vd
